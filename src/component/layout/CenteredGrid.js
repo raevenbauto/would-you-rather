@@ -12,10 +12,10 @@ const styles = {
 
 class CenteredGrid extends Component{
     render(){
-        const {withPaper} = this.props;
+        const {withPaper, xsSize} = this.props;
         return(
             <Grid container justify="center">
-                <Grid item >
+                <Grid item xs={xsSize} >
                     {
                         (withPaper)
                             ? <Paper elevation={3} style={styles.Body}>
@@ -30,7 +30,8 @@ class CenteredGrid extends Component{
 }
 
 CenteredGrid.defaultProps = {
-    withPaper: false
+    withPaper: false,
+    xsSize: 0
 };
 
 export default CenteredGrid;

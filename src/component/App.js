@@ -10,14 +10,16 @@ class App extends Component {
         return(
             <Fragment>
                 <Header/>
-                <CenteredGrid withPaper={true}>
-                    {
-                        (this.props.authedUser !== "")
-                            ? <MainPage />
-                            : <Login />
 
-                    }
-                </CenteredGrid>
+                {
+                    (this.props.authedUser !== "")
+                        ?   <MainPage />
+                        :
+                            <CenteredGrid withPaper={true}>
+                                <Login />
+                            </CenteredGrid>
+                }
+
             </Fragment>
         )
     }

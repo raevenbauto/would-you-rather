@@ -4,7 +4,7 @@ import CenteredGrid from "./layout/CenteredGrid";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import setAuthedUser from "../action/authedUser";
+import handleLogin from "../action/authedUser";
 
 class Login extends Component {
 
@@ -18,7 +18,7 @@ class Login extends Component {
 
     loginClicked = (e) => {
        const {dispatch} = this.props;
-       dispatch(setAuthedUser(this.state.username))
+       dispatch(handleLogin(this.state.username))
     };
 
     render(){

@@ -3,9 +3,9 @@ import HomeIcon from '@material-ui/icons/Home';
 import FiberNewIcon from '@material-ui/icons/FiberNew';
 import AssessmentIcon from '@material-ui/icons/Assessment';
 import {connect} from "react-redux";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Grid from "@material-ui/core/Grid";
+import CenteredGrid from "./layout/CenteredGrid";
+import BottomNavigation from "@material-ui/core/BottomNavigation";
+import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 
 class MainPage extends Component{
     state = {
@@ -34,24 +34,30 @@ class MainPage extends Component{
     render(){
         return (
             <Fragment>
-                {
-                    this.currPage()
-                }
-                <Grid container>
-                    <Grid item>
-                        <Tabs
-                            indicatorColor="primary"
-                            textColor="primary"
-                            centered
-                            value={this.state.selectedTab}
-                            onChange={this.handleTabChange}>
+                <CenteredGrid
+                    withPaper={true}
+                    xsSize={6}>
+                    {
+                        this.currPage()
+                    }
+                </CenteredGrid>
 
-                            <Tab value={0} tabIndex={0} label="Home" icon={<HomeIcon/>} />
-                            <Tab value={1} tabIndex={1} label="New Question" icon={<FiberNewIcon/>} />
-                            <Tab value={2} tabIndex={2} label="Ranking" icon={<AssessmentIcon />}/>
-                        </Tabs>
-                    </Grid>
-                </Grid>
+
+                <CenteredGrid
+                    withPaper={true}
+                    xsSize={11}>
+                    <BottomNavigation
+                        value={this.state.selectedTab}
+                        onChange={this.handleTabChange}
+                        showLabels={true}>
+
+                        <BottomNavigationAction label="Home" icon={<HomeIcon/>} />
+                        <BottomNavigationAction label="New Question" icon={<FiberNewIcon />} />
+                        <BottomNavigationAction label="Ranking" icon={<AssessmentIcon />} />
+
+                    </BottomNavigation>
+                </CenteredGrid>
+
             </Fragment>
         )
     }

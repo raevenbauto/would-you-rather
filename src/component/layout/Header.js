@@ -1,17 +1,35 @@
-import React from "react";
+import React, {Component} from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Typography from "@material-ui/core/Typography";
 import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
+import HeaderRightMenu from "./HeaderRightMenu";
+
+const style = {
+    RightSide: {
+        flex: 2
+    }
+};
+
+class Header extends Component {
 
 
-export default props =>
-    <AppBar position="static">
-        <Toolbar variant="dense">
-            <IconButton edge="start" color="inherit" aria-label="menu">
-            </IconButton>
-            <Typography variant="h5" color="inherit">
-                Would you rather?
-            </Typography>
-        </Toolbar>
-    </AppBar>
+    render(){
+
+        return(
+            <AppBar position="static" style={{flex: 1}}>
+                <Toolbar
+                    variant="regular">
+                    <Typography variant="h5" color="inherit" style={style.RightSide}>
+                        Would you rather?
+                    </Typography>
+
+                    <HeaderRightMenu />
+                </Toolbar>
+            </AppBar>
+        )
+    }
+}
+
+
+
+export default Header;

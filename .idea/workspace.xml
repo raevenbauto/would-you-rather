@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/authedUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/authedUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/layout/CenteredGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/CenteredGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/_DATA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +44,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\src\component\layout" />
+      <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\src" />
+      <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\src\images" />
+      <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\public" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -70,11 +91,16 @@
       <workItem from="1584034958748" duration="24000" />
       <workItem from="1584231823874" duration="12264000" />
       <workItem from="1584317757800" duration="464000" />
+      <workItem from="1584650884376" duration="7363000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Push" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push" />
   </component>
   <component name="WindowStateProjectService">
     <state x="720" y="311" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584232544533">
