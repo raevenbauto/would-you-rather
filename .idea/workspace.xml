@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="">
+    <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="Push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/action/authedUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/authedUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/layout/CenteredGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/CenteredGrid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/_DATA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/layout/HeaderRightMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/HeaderRightMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/authedUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/authedUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reactnd-chirper-app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,6 +91,8 @@
       <workItem from="1584231823874" duration="12264000" />
       <workItem from="1584317757800" duration="464000" />
       <workItem from="1584650884376" duration="7363000" />
+      <workItem from="1584673974323" duration="8341000" />
+      <workItem from="1584719117994" duration="42000" />
     </task>
     <servers />
   </component>
@@ -107,18 +108,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="720" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/150.-1080.1920.1040@0.0.1920.1040" timestamp="1584232544533" />
-    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583982381018">
+    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584677526483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583982381018" />
-    <state x="573" y="28" key="CommitChangelistDialog2" timestamp="1584650652689">
+    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584677526483" />
+    <state x="462" y="113" key="CommitChangelistDialog2" timestamp="1584719156767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="573" y="28" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584650652689" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1584318747338">
+    <state x="462" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584719156767" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584680549349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584318747338" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584680549349" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1584678636748">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584678636748" />
     <state x="817" y="415" key="Github.ShareDialog" timestamp="1584244904871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -139,9 +144,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="261" key="GridCell.Tab.0.right/0.0.1920.1040/150.-1080.1920.1040@0.0.1920.1040" timestamp="1584232520259" />
-    <state x="161" y="176" key="SettingsEditor" timestamp="1583979854483">
+    <state x="540" y="256" key="IDE.errors.dialog" timestamp="1584677780867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="161" y="176" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583979854483" />
+    <state x="540" y="256" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584677780867" />
+    <state x="161" y="176" key="SettingsEditor" timestamp="1584719144933">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="161" y="176" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584719144933" />
   </component>
 </project>

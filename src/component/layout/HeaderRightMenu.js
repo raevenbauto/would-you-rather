@@ -38,7 +38,7 @@ class HeaderRightMenu extends Component {
         return(
             <Fragment>
                 {
-                    (authedUser !== "")
+                    (authedUser && authedUser.id)
                         ?
                             <Fragment>
                                 <Avatar src={avatar} onClick={this.onAvatarClick}/>

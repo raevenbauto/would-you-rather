@@ -4,21 +4,40 @@ import CenteredGrid from "./layout/CenteredGrid";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import handleLogin from "../action/authedUser";
+import setAuthedUser from "../action/authedUser";
+import {_getUsers} from "../utilities/_DATA";
+import {setUsers} from "../action/users";
 
 class Login extends Component {
-
     state = {
-        username: ""
+        username: "",
+        userNameError: false,
     };
 
     handleUsernameChange = (e) => {
-        this.setState({username: e.target.value});
+        this.setState({
+            username: e.target.value,
+            userNameError: false
+        });
     };
 
     loginClicked = (e) => {
-       const {dispatch} = this.props;
-       dispatch(handleLogin(this.state.username))
+        const {dispatch} = this.props;
+        const {username} = this.state;
+
+        _getUsers().then(users => {
+            if (users[username]){
+                dispatch(setAuthedUser(users[username]));
+                dispatch(setUsers(users));
+            }
+
+            else{
+                dispatch(setAuthedUser({}));
+                this.setState({
+                    userNameError: true
+                })
+            }
+        });
     };
 
     render(){
@@ -26,11 +45,25 @@ class Login extends Component {
             <Fragment>
                 <CenteredGrid>
                     <Grid container style={{marginBottom: 20}}>
-                        <TextField id="outlined-basic" label="Username" variant="outlined" fullWidth={true} onChange={this.handleUsernameChange}/>
+                        <TextField
+                            id="outlined-basic"
+                            label="Username"
+                            variant="outlined"
+                            fullWidth={true}
+                            onChange={this.handleUsernameChange}
+                            autoFocus={true}
+                            error={this.state.userNameError}
+                            helperText={"Please use only the following: sarahedo, tylermcginnis, johndoe"}/>
                     </Grid>
 
                     <Grid container style={{marginBottom: 20}}>
-                        <TextField id="outlined-basic" label="Password" variant="outlined" fullWidth={true} type="password"/>
+                        <TextField
+                            id="outlined-basic"
+                            label="Password"
+                            variant="outlined"
+                            fullWidth={true}
+                            type="password"
+                            helperText={"This can be empty."}/>
                     </Grid>
 
                     <Grid container>
@@ -38,7 +71,6 @@ class Login extends Component {
                             Login
                         </Button>
                     </Grid>
-
                 </CenteredGrid>
             </Fragment>
         )

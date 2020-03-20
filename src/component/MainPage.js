@@ -35,8 +35,7 @@ class MainPage extends Component{
         return (
             <Fragment>
                 <CenteredGrid
-                    withPaper={true}
-                    xsSize={6}>
+                    withPaper={true}>
                     {
                         this.currPage()
                     }
@@ -45,7 +44,7 @@ class MainPage extends Component{
 
                 <CenteredGrid
                     withPaper={true}
-                    xsSize={11}>
+                    xsSize={8}>
                     <BottomNavigation
                         value={this.state.selectedTab}
                         onChange={this.handleTabChange}
