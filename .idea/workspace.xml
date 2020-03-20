@@ -112,10 +112,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584677526483" />
-    <state x="462" y="113" key="CommitChangelistDialog2" timestamp="1584719156767">
+    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1584719203282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584719156767" />
+    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584719203282" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584680549349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -152,5 +152,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="161" y="176" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584719144933" />
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1584719215169">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584719215169" />
   </component>
 </project>

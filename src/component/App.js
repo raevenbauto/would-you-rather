@@ -7,15 +7,15 @@ import MainPage from "./MainPage";
 
 class App extends Component {
     render(){
+        const {authedUser} = this.props;
+
         return(
             <Fragment>
                 <Header/>
-
                 {
-                    (this.props.authedUser !== "")
+                    (authedUser && authedUser.id)
                         ?   <MainPage />
-                        :
-                            <CenteredGrid withPaper={true}>
+                        :   <CenteredGrid withPaper={true} >
                                 <Login />
                             </CenteredGrid>
                 }
