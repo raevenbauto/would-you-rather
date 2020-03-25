@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="Push">
+    <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="Configured the login">
+      <change afterPath="$PROJECT_DIR$/src/component/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/action/authedUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/authedUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/MainPage.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/layout/CenteredGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/CenteredGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/layout/HeaderRightMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/HeaderRightMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/avatar_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/avatar_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/avatar_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/avatar_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/avatar_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/avatar_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/authedUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/authedUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/_DATA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/_DATA.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +65,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raeven\Documents\GitHub\would-you-rather\src\component" />
+      <recent name="C:\Users\raeven\Documents\GitHub\would-you-rather\src\component\tabs" />
+      <recent name="C:\Users\raeven\Documents\GitHub\would-you-rather\public" />
       <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\src\component\layout" />
       <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\src" />
-      <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\src\images" />
-      <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -93,7 +104,29 @@
       <workItem from="1584650884376" duration="7363000" />
       <workItem from="1584673974323" duration="8341000" />
       <workItem from="1584719117994" duration="42000" />
+      <workItem from="1584719173538" duration="175000" />
+      <workItem from="1584836343082" duration="13053000" />
+      <workItem from="1584861423473" duration="1857000" />
+      <workItem from="1584899169082" duration="4378000" />
+      <workItem from="1584923229149" duration="20143000" />
+      <workItem from="1585002462249" duration="1423000" />
+      <workItem from="1585077173427" duration="25273000" />
     </task>
+    <task id="LOCAL-00001" summary="Configured the login">
+      <created>1584719204915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584719204915</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Configured the login">
+      <created>1584719334187</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584719334187</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,29 +134,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Push" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push" />
+    <MESSAGE value="Configured the login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured the login" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="441" y="206" key="#Deployment" timestamp="1585110275148">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="441" y="206" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1585110275148" />
     <state x="720" y="311" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584232544533">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="720" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/150.-1080.1920.1040@0.0.1920.1040" timestamp="1584232544533" />
-    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584677526483">
+    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585099340835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584677526483" />
-    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1584719203282">
+    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585099340835" />
+    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1585110541874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584719203282" />
+    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585110541874" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584680549349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584680549349" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1584678636748">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1585092106155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584678636748" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585092106155" />
     <state x="817" y="415" key="Github.ShareDialog" timestamp="1584244904871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -152,9 +190,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="161" y="176" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584719144933" />
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1584719215169">
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1585110606524">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584719215169" />
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585110606524" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585106536273">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585106536273" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/utilities/_DATA.js</url>
+          <line>63</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/action/questions.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,13 +1,14 @@
 import React, {Component, Fragment} from "react";
 import {connect} from "react-redux";
-import setAuthedUser from "../../action/authedUser";
-import Button from "@material-ui/core/Button";
+import {logoutAuthUser} from "../../action/authedUser";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import Avatar from "@material-ui/core/Avatar";
 
-import avatar from "../../images/avatar_3.png"
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import {removeUsers} from "../../action/users";
+import {hideLoading, showLoading} from "../../action/loading";
+import Typography from "@material-ui/core/Typography";
 
 
 class HeaderRightMenu extends Component {
@@ -24,12 +25,18 @@ class HeaderRightMenu extends Component {
         }))
     };
 
-    onLogoutClick = (e) => {
+    onLogoutClick = () => {
         const {dispatch} = this.props;
-        dispatch(setAuthedUser(""));
+        dispatch(showLoading());
+
         this.setState((prevState) => ({
             menuOpen: !prevState.menuOpen
         }));
+
+        dispatch(logoutAuthUser());
+        dispatch(removeUsers());
+        //TODO: ADD REMOVE_QUESTIONS to clear the store.
+        dispatch(hideLoading());
     };
 
     render(){
@@ -41,7 +48,13 @@ class HeaderRightMenu extends Component {
                     (authedUser && authedUser.id)
                         ?
                             <Fragment>
-                                <Avatar src={avatar} onClick={this.onAvatarClick}/>
+                                <Typography
+                                    variant="subtitle1">
+                                    {authedUser.name}
+                                </Typography>
+                                <Avatar src={process.env.PUBLIC_URL + authedUser.avatarURL} onClick={this.onAvatarClick}
+                                    style={{marginLeft: 10}}/>
+
                                 <Menu
                                     id="settings"
                                     keepMounted

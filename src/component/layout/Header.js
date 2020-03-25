@@ -3,6 +3,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Typography from "@material-ui/core/Typography";
 import Toolbar from "@material-ui/core/Toolbar";
 import HeaderRightMenu from "./HeaderRightMenu";
+import {LinearProgress} from "@material-ui/core";
+import {connect} from "react-redux";
 
 const style = {
     RightSide: {
@@ -20,7 +22,7 @@ class Header extends Component {
                 <Toolbar
                     variant="regular">
                     <Typography variant="h5" color="inherit" style={style.RightSide}>
-                        Would you rather?
+                        Would you rather? <LinearProgress hidden={this.props.loading.length === 0} />
                     </Typography>
 
                     <HeaderRightMenu />
@@ -30,6 +32,11 @@ class Header extends Component {
     }
 }
 
+function mapStateToProps(state){
+    return {
+        loading: state.loading
+    }
+}
 
 
-export default Header;
+export default connect(mapStateToProps)(Header);

@@ -4,13 +4,11 @@ import CenteredGrid from "./layout/CenteredGrid";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import setAuthedUser from "../action/authedUser";
-import {_getUsers} from "../utilities/_DATA";
-import {setUsers} from "../action/users";
+import {handleLogin} from "../action/authedUser";
 
-class Login extends Component {
+class LoginPage extends Component {
     state = {
-        username: "",
+        username: "johndoe",
         userNameError: false,
     };
 
@@ -21,29 +19,21 @@ class Login extends Component {
         });
     };
 
-    loginClicked = (e) => {
+    loginClicked = () => {
         const {dispatch} = this.props;
-        const {username} = this.state;
+        const cb = (hasError) => {
+            this.setState({
+                userNameError: hasError
+            })
+        };
 
-        _getUsers().then(users => {
-            if (users[username]){
-                dispatch(setAuthedUser(users[username]));
-                dispatch(setUsers(users));
-            }
-
-            else{
-                dispatch(setAuthedUser({}));
-                this.setState({
-                    userNameError: true
-                })
-            }
-        });
+        dispatch(handleLogin(this.state.username, cb))
     };
 
     render(){
         return(
             <Fragment>
-                <CenteredGrid>
+                <CenteredGrid xsSize={12}>
                     <Grid container style={{marginBottom: 20}}>
                         <TextField
                             id="outlined-basic"
@@ -83,4 +73,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(Login);
+export default connect(mapStateToProps)(LoginPage);
