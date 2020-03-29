@@ -30,7 +30,7 @@ class AddPage extends Component{
         const {authedUser, dispatch} = this.props;
         const cb = () => {
             this.props.history.push({
-                pathname: `/home`,
+                pathname: `/`,
             });
         };
 
