@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom
 import AddPage from "./AddPage";
 import LeaderboardPage from "./LeaderboardPage";
 import QuestionPage from "./QuestionPage";
+import ErrorPage from "./ErrorPage";
 
 class App extends Component {
     render(){
@@ -17,34 +18,41 @@ class App extends Component {
                 <Header/>
                 {
                     (authedUser && authedUser.id)
-                        ? <Redirect to="/home"/>
-                        : <Redirect to="/login"/>
-                }
+                            ? <Switch>
+                                {/*<Route exact path="/login">*/}
+                                {/*    <CenteredGrid*/}
+                                {/*        withPaper={true}>*/}
+                                {/*        <Login />*/}
+                                {/*    </CenteredGrid>*/}
+                                {/*</Route>*/}
 
-                <Switch>
-                    <Route exact path="/login">
-                        <CenteredGrid
+                                <Route exact path="/">
+                                    <HomePage />
+                                </Route>
+
+                                <Route exact path="/add">
+                                    <AddPage />
+                                </Route>
+
+                                <Route exact path="/leaderboard">
+                                    <LeaderboardPage />
+                                </Route>
+
+                                <Route exact path="/questions/:question_id">
+                                    <QuestionPage />
+                                </Route>
+
+                                <Route exact path="/error">
+                                    <ErrorPage />
+                                </Route>
+                            </Switch>
+                        : <CenteredGrid
                             withPaper={true}>
                             <Login />
-                        </CenteredGrid>
-                    </Route>
+                          </CenteredGrid>
+                }
 
-                    <Route exact path="/home">
-                        <HomePage />
-                    </Route>
 
-                    <Route exact path="/add">
-                        <AddPage />
-                    </Route>
-
-                    <Route exact path="/leaderboard">
-                        <LeaderboardPage />
-                    </Route>
-
-                    <Route exact path="/questions/:question_id">
-                        <QuestionPage />
-                    </Route>
-                </Switch>
             </Router>
         )
     }

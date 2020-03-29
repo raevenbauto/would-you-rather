@@ -9,32 +9,26 @@ import {isQuestionAnswered} from "../utilities/helper";
 
 class QuestionPage extends Component {
     viewChanger = () => {
-        const {qid, defaultAnswer} = this.props.location;
-        const {questionAnswered, questions} = this.props;
+        const {defaultAnswer} = this.props.location;
+        const {questionAnswered, question} = this.props;
 
-        if (questions){
-            const question = questions[qid];
-
-            if (question){
-                if (!questionAnswered){
-                    if (question)
-                        return <QuestionPreview key={question.id} qid={question.id}
-                                                answeringEnabled={true} defaultAnswer={defaultAnswer}/>;
-                    return null;
-                }
-
-                else {
-                    if (question)
-                        return <QuestionResult key={question.id} qid={question.id}/>;
-
-                    return null;
-                }
+        if (question){
+            if (!questionAnswered){
+                return <QuestionPreview key={question.id} qid={question.id}
+                                        answeringEnabled={true} defaultAnswer={defaultAnswer}/>;
             }
 
-            else{
-                alert("404");
+            else {
+                return <QuestionResult key={question.id} qid={question.id}/>;
             }
         }
+
+        else{
+            this.props.history.push({
+                pathname: `/error`,
+            });
+        }
+
     };
 
     render(){
@@ -53,7 +47,8 @@ class QuestionPage extends Component {
 
 function mapStateToProps(state, ownProps){
     const {authedUser, questions} = state;
-    const question = questions[ownProps.location.qid];
+    const qid = ownProps.match.params.question_id;
+    const question = questions[qid];
 
     if (question){
         return{

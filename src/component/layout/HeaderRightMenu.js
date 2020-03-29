@@ -10,6 +10,7 @@ import {removeUsers} from "../../action/users";
 import {hideLoading, showLoading} from "../../action/loading";
 import Typography from "@material-ui/core/Typography";
 import {removeQuestions} from "../../action/questions";
+import {withRouter} from "react-router-dom";
 
 
 class HeaderRightMenu extends Component {
@@ -34,10 +35,15 @@ class HeaderRightMenu extends Component {
             menuOpen: !prevState.menuOpen
         }));
 
-        dispatch(logoutAuthUser());
         dispatch(removeUsers());
         dispatch(removeQuestions());
         dispatch(hideLoading());
+
+        this.props.history.push({
+            pathname: `/`,
+        });
+
+        dispatch(logoutAuthUser());
     };
 
     render(){
@@ -82,4 +88,4 @@ function mapStateToProps (state) {
     }
 }
 
-export default connect(mapStateToProps)(HeaderRightMenu)
+export default withRouter(connect(mapStateToProps)(HeaderRightMenu));

@@ -6,15 +6,9 @@ import BottomNav from "./layout/BottomNav";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import QuestionPreview from "./QuestionPreview";
-import handleGetQuestions from "../action/questions";
 import Typography from "@material-ui/core/Typography";
 
 class HomePage extends Component{
-    componentDidMount() {
-        const {dispatch} = this.props;
-        dispatch(handleGetQuestions());
-    }
-
     state = {
         selectedTab: 0
     };

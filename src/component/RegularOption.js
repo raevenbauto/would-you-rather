@@ -44,7 +44,6 @@ class RegularOption extends Component {
         else {
             this.props.history.push({
                 pathname: `/questions/${question.id}`,
-                qid: question.id,
                 defaultAnswer: optionAnswer
             });
         }
@@ -77,13 +76,11 @@ class RegularOption extends Component {
             const cb = () => {
                 this.props.history.push({
                     pathname: `/questions/${question.id}`,
-                    qid: question.id,
                 });
             };
 
             dispatch(handleUpdateQuestionAnswer({
                 authedUser: authedUser.id,
-                qid: question.id,
                 answer: (currentAnswer === 1) ? "optionOne" : "optionTwo"
             }, cb));
         }
@@ -91,7 +88,6 @@ class RegularOption extends Component {
         else{
             this.props.history.push({
                 pathname: `/questions/${question.id}`,
-                qid: question.id,
             });
         }
     };

@@ -9,7 +9,7 @@ export const UPDATE_QUESTION = "UPDATE_QUESTION";
 export const ADD_QUESTION = "ADD_QUESTION";
 export const REMOVE_QUESTIONS = "REMOVE_QUESTIONS";
 
-function setQuestions(questions){
+export function setQuestions(questions){
     return{
         questions,
         type: SET_QUESTIONS
@@ -41,7 +41,6 @@ export function removeQuestions(){
 export function handleAddQuestion(question, cb){
     return (dispatch) => {
         const loadingId = generateUID();
-
         dispatch(showLoading(loadingId));
 
         _saveQuestion(question)

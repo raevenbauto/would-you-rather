@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="">
+    <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="Removed default login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/authedUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/authedUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/questions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/AddPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/LeaderboardItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/LeaderboardItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/LeaderboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/LeaderboardPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/QuestionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/QuestionPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/RegularOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/RegularOption.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/layout/BottomNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/BottomNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/layout/HeaderRightMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/HeaderRightMenu.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reactnd-chirper-app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -103,7 +107,9 @@
       <workItem from="1585077173427" duration="25273000" />
       <workItem from="1585188751515" duration="6721000" />
       <workItem from="1585360578551" duration="20191000" />
-      <workItem from="1585434258780" duration="14135000" />
+      <workItem from="1585434258780" duration="14378000" />
+      <workItem from="1585455643806" duration="19000" />
+      <workItem from="1585507339231" duration="4084000" />
     </task>
     <task id="LOCAL-00001" summary="Configured the login">
       <created>1584719204915</created>
@@ -133,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585454121842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Removed default login">
+      <created>1585455475623</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585455475623</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,18 +172,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585099340835" />
-    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1585454121291">
+    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1585455610924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585454121291" />
+    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585455610924" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584680549349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584680549349" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1585092106155">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1585509063735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585092106155" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585509063735" />
     <state x="817" y="415" key="Github.ShareDialog" timestamp="1584244904871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -199,10 +212,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="161" y="176" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584719144933" />
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1585454128310">
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1585455484319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585454128310" />
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585455484319" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585201582929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
