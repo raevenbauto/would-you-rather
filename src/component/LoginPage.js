@@ -8,7 +8,7 @@ import {handleLogin} from "../action/authedUser";
 
 class LoginPage extends Component {
     state = {
-        username: "johndoe",
+        username: "",
         userNameError: false,
     };
 
