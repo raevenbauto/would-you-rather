@@ -2,7 +2,7 @@ import React, {Component, Fragment} from "react";
 import {connect} from "react-redux";
 import CenteredGrid from "./layout/CenteredGrid";
 import BottomNav from "./layout/BottomNav";
-import withRouter from "react-router-dom/es/withRouter";
+import {withRouter} from "react-router-dom";
 import QuestionPreview from "./QuestionPreview";
 import QuestionResult from "./QuestionResult";
 import {isQuestionAnswered} from "../utilities/helper";
@@ -15,18 +15,24 @@ class QuestionPage extends Component {
         if (questions){
             const question = questions[qid];
 
-            if (!questionAnswered){
-                if (question)
-                    return <QuestionPreview key={question.id} qid={question.id}
-                                            answeringEnabled={true} defaultAnswer={defaultAnswer}/>;
-                return null;
+            if (question){
+                if (!questionAnswered){
+                    if (question)
+                        return <QuestionPreview key={question.id} qid={question.id}
+                                                answeringEnabled={true} defaultAnswer={defaultAnswer}/>;
+                    return null;
+                }
+
+                else {
+                    if (question)
+                        return <QuestionResult key={question.id} qid={question.id}/>;
+
+                    return null;
+                }
             }
 
-            else {
-                if (question)
-                    return <QuestionResult key={question.id} qid={question.id}/>;
-
-                return null;
+            else{
+                alert("404");
             }
         }
     };

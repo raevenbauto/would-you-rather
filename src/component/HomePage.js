@@ -8,7 +8,6 @@ import Tabs from "@material-ui/core/Tabs";
 import QuestionPreview from "./QuestionPreview";
 import handleGetQuestions from "../action/questions";
 import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
 
 class HomePage extends Component{
     componentDidMount() {
@@ -79,8 +78,8 @@ function mapStateToProps({authedUser, questions}){
 
     if (authedUser.id){ //Checking if's authenticated.
         const answeredKeys = Object.keys(authedUser.answers);
-        const answeredQuestions = Object.values(questions).filter(f => answeredKeys.includes(f.id));
-        const unansweredQuestions = Object.values(questions).filter(f => !answeredKeys.includes(f.id));
+        const answeredQuestions = Object.values(questions).filter(f => answeredKeys.includes(f.id)).sort((a, b) => (b.timestamp - a.timestamp));
+        const unansweredQuestions = Object.values(questions).filter(f => !answeredKeys.includes(f.id)).sort((a, b) => (b.timestamp - a.timestamp));
 
         return {
             answeredQuestions,

@@ -29,10 +29,9 @@ class LeaderboardPage extends Component{
                             <div style={{height: 400, overflowY: "auto"}}>
                                 {
                                     this.props.users.map(m => {
-                                        console.log(m.totalPoints);
                                         return (
-                                            <Grid item>
-                                                <LeaderboardItem user={m} />
+                                            <Grid item key={m.id}>
+                                                <LeaderboardItem key={m.id} user={m} />
                                             </Grid>
 
                                         )

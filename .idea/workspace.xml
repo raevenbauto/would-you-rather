@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AddPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/LeaderboardItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/LeaderboardItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/LeaderboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/LeaderboardPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/QuestionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/QuestionPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/layout/BottomNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/BottomNav.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +103,7 @@
       <workItem from="1585077173427" duration="25273000" />
       <workItem from="1585188751515" duration="6721000" />
       <workItem from="1585360578551" duration="20191000" />
-      <workItem from="1585434258780" duration="12854000" />
+      <workItem from="1585434258780" duration="14135000" />
     </task>
     <task id="LOCAL-00001" summary="Configured the login">
       <created>1584719204915</created>
@@ -120,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585454044705</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removed default login">
+      <created>1585454121841</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585454121842</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +143,8 @@
     <MESSAGE value="Push" />
     <MESSAGE value="Configured the login" />
     <MESSAGE value="Finished the project!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the project!" />
+    <MESSAGE value="Removed default login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed default login" />
   </component>
   <component name="WindowStateProjectService">
     <state x="441" y="206" key="#Deployment" timestamp="1585110275148">
@@ -145,10 +159,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585099340835" />
-    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1585454043736">
+    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1585454121291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585454043736" />
+    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585454121291" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584680549349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -185,10 +199,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="161" y="176" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584719144933" />
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1585454050812">
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1585454128310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585454050812" />
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585454128310" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585201582929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

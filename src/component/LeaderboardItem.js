@@ -1,8 +1,6 @@
 import React, {Component, Fragment} from "react";
 import Grid from "@material-ui/core/Grid";
-import CenteredGrid from "./layout/CenteredGrid";
 import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
 import Avatar from "@material-ui/core/Avatar";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
