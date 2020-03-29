@@ -1,6 +1,5 @@
 import {_getUsers, generateUID} from "../utilities/_DATA";
 import {showLoading} from "./loading";
-import {UPDATE_AUTH_USER_QUESTION} from "./authedUser";
 
 export const SET_USERS = "SET_USERS";
 export const REMOVE_USERS = "REMOVE_USERS";

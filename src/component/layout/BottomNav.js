@@ -26,6 +26,9 @@ class BottomNav extends Component {
             case 2:
                 this.props.history.push("/leaderboard");
                 return;
+
+            default:
+                return;
         }
     };
 

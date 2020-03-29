@@ -1,7 +1,6 @@
 import {_getQuestions, _saveQuestion, _saveQuestionAnswer, generateUID} from "../utilities/_DATA";
 import {hideLoading, showLoading} from "./loading";
-import loading from "../reducers/loading";
-import {handleGetUsers, updateUser, updateUserNewQuestions} from "./users";
+import {updateUser, updateUserNewQuestions} from "./users";
 import {updateAuthedUser, updateAuthedUserQuestions} from "./authedUser";
 
 export const SET_QUESTIONS = "SET_QUESTIONS";

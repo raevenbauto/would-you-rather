@@ -1,7 +1,7 @@
 import {_getQuestions, _getUsers, generateUID} from "../utilities/_DATA";
 import {setUsers} from "./users";
 import {hideLoading, showLoading} from "./loading";
-import handleGetQuestions, {setQuestions} from "./questions";
+import {setQuestions} from "./questions";
 
 export const LOGIN_AUTH_USER = "LOGIN_AUTH_USER";
 export const LOGOUT_AUTH_USER = "LOGOUT_AUTH_USER";

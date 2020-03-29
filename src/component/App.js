@@ -4,7 +4,7 @@ import Header from "./layout/Header";
 import Login from "./LoginPage";
 import CenteredGrid from "./layout/CenteredGrid";
 import HomePage from "./HomePage";
-import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import AddPage from "./AddPage";
 import LeaderboardPage from "./LeaderboardPage";
 import QuestionPage from "./QuestionPage";
