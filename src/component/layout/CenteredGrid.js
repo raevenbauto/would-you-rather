@@ -1,6 +1,6 @@
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 
 const styles = {
     Body: {
@@ -10,26 +10,45 @@ const styles = {
 };
 
 class CenteredGrid extends Component{
-    render(){
+
+    paperCreator = () => {
         const {withPaper} = this.props;
+
+        if (withPaper){
+            return <Paper elevation={3} style={styles.Body}>
+                {this.props.children}
+            </Paper>
+        }
+
+        return <Fragment>{this.props.children}</Fragment>;
+    };
+
+    render(){
+        const {mdSize} = this.props;
         return(
             <Grid
                 container
                 direction="row"
                 alignItems="center"
-                justify="center"
-                >
-                <Grid
-                    md="auto"
-                    item>
-                    {
-                        (withPaper)
-                            ?   <Paper elevation={3} style={styles.Body}>
-                                {this.props.children}
-                            </Paper>
-                            : this.props.children
-                    }
-                </Grid>
+                justify="center">
+
+                {
+                    (mdSize === 0)
+                    ?   <Grid
+                            md="auto"
+                            item>
+                            {this.paperCreator()}
+                        </Grid>
+
+                    :   <Grid
+                            md={mdSize}
+                            item>
+                            {this.paperCreator()}
+                        </Grid>
+                }
+
+
+
             </Grid>
         )
     }
@@ -37,6 +56,7 @@ class CenteredGrid extends Component{
 
 CenteredGrid.defaultProps = {
     withPaper: false,
+    mdSize: 0
 };
 
 export default CenteredGrid;

@@ -1,4 +1,4 @@
-import {QUESTION_USER_UPDATE, REMOVE_USERS, SET_USERS} from "../action/users";
+import {QUESTION_USER_UPDATE, REMOVE_USERS, SET_USERS, UPDATE_USER_NEW_QUESTION} from "../action/users";
 
 export default function users(state = [], action){
     switch(action.type){
@@ -17,6 +17,15 @@ export default function users(state = [], action){
                         ...state[action.authedUser].answers,
                         [action.qid]: action.answer
                     }
+                }
+            };
+
+        case UPDATE_USER_NEW_QUESTION:
+            return {
+                ...state,
+                [action.userId]: {
+                    ...state[action.userId],
+                    questions: state[action.userId].questions.concat([action.qid])
                 }
             };
 

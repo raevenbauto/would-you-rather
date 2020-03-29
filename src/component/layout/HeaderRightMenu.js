@@ -9,6 +9,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import {removeUsers} from "../../action/users";
 import {hideLoading, showLoading} from "../../action/loading";
 import Typography from "@material-ui/core/Typography";
+import {removeQuestions} from "../../action/questions";
 
 
 class HeaderRightMenu extends Component {
@@ -35,7 +36,7 @@ class HeaderRightMenu extends Component {
 
         dispatch(logoutAuthUser());
         dispatch(removeUsers());
-        //TODO: ADD REMOVE_QUESTIONS to clear the store.
+        dispatch(removeQuestions());
         dispatch(hideLoading());
     };
 

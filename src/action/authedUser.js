@@ -5,6 +5,7 @@ import {hideLoading, showLoading} from "./loading";
 export const LOGIN_AUTH_USER = "LOGIN_AUTH_USER";
 export const LOGOUT_AUTH_USER = "LOGOUT_AUTH_USER";
 export const UPDATE_AUTH_USER = "UPDATE_AUTH_USER";
+export const UPDATE_AUTH_USER_QUESTION = "UPDATE_AUTH_USER_QUESTION";
 
 export function loginAuthUser(user){
     return {
@@ -25,6 +26,13 @@ export function updateAuthedUser({authedUser, qid, answer}){
         qid,
         answer,
         type: UPDATE_AUTH_USER
+    }
+}
+
+export function updateAuthedUserQuestions(qid){
+    return {
+        qid,
+        type: UPDATE_AUTH_USER_QUESTION
     }
 }
 

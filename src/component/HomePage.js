@@ -7,6 +7,8 @@ import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import QuestionPreview from "./QuestionPreview";
 import handleGetQuestions from "../action/questions";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 
 class HomePage extends Component{
     componentDidMount() {
@@ -24,7 +26,6 @@ class HomePage extends Component{
         })
     };
 
-
     render(){
         const {answeredQuestions, unansweredQuestions} = this.props;
         const {selectedTab} = this.state;
@@ -32,7 +33,14 @@ class HomePage extends Component{
         return (
             <Fragment>
                 <CenteredGrid
-                    withPaper={true}>
+                    withPaper={true}
+                    mdSize={4}>
+                    <Typography
+                        variant={"h4"}
+                        align={"center"}>
+                        Questions
+                    </Typography>
+
                     <Tabs
                         value={selectedTab}
                         onChange={this.handleTabChange}
@@ -49,12 +57,12 @@ class HomePage extends Component{
                             (selectedTab === 0)
                                 ?
                                     unansweredQuestions.map(m => {
-                                        return <QuestionPreview key={m.id} question={m}/>
+                                        return <QuestionPreview key={m.id} qid={m.id}/>
                                     })
 
                                 :
                                     answeredQuestions.map(m => {
-                                        return <QuestionPreview key={m.id} question={m}/>
+                                        return <QuestionPreview key={m.id} qid={m.id}/>
                                     })
                         }
                     </div>

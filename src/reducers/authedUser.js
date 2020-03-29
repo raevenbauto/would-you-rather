@@ -1,4 +1,4 @@
-import {LOGIN_AUTH_USER, LOGOUT_AUTH_USER, UPDATE_AUTH_USER} from "../action/authedUser";
+import {LOGIN_AUTH_USER, LOGOUT_AUTH_USER, UPDATE_AUTH_USER, UPDATE_AUTH_USER_QUESTION} from "../action/authedUser";
 
 export default function authedUser(state = {}, action){
     switch (action.type){
@@ -15,6 +15,12 @@ export default function authedUser(state = {}, action){
                     ...state.answers,
                     [action.qid]: action.answer
                 }
+            };
+
+        case UPDATE_AUTH_USER_QUESTION:
+            return {
+                ...state,
+                questions: state.questions.concat([action.qid])
             };
 
         default:
