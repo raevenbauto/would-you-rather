@@ -72,6 +72,7 @@ class RegularOption extends Component {
     onSubmitClick = () => {
         const {answeringEnabled, authedUser, question, dispatch} = this.props;
         const {currentAnswer} = this.state;
+
         if (answeringEnabled){
             const cb = () => {
                 this.props.history.push({
@@ -81,7 +82,8 @@ class RegularOption extends Component {
 
             dispatch(handleUpdateQuestionAnswer({
                 authedUser: authedUser.id,
-                answer: (currentAnswer === 1) ? "optionOne" : "optionTwo"
+                answer: (currentAnswer === 1) ? "optionOne" : "optionTwo",
+                qid: question.id
             }, cb));
         }
 

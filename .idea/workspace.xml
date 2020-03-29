@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/AddPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/questions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/RegularOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/RegularOption.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +102,8 @@
       <workItem from="1585434258780" duration="14378000" />
       <workItem from="1585455643806" duration="19000" />
       <workItem from="1585507339231" duration="4366000" />
+      <workItem from="1585515071601" duration="156000" />
+      <workItem from="1585521180598" duration="537000" />
     </task>
     <task id="LOCAL-00001" summary="Configured the login">
       <created>1584719204915</created>
@@ -144,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585514753915</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added 404 page and allows to navigate directly to the url.">
+      <created>1585515121804</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585515121804</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,18 +181,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585099340835" />
-    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1585514752250">
+    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1585515120929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585514752250" />
+    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585515120929" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584680549349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584680549349" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1585514935190">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1585515225057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585514935190" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585515225057" />
     <state x="817" y="415" key="Github.ShareDialog" timestamp="1584244904871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -211,10 +221,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="161" y="176" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584719144933" />
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1585514759538">
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1585515131083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585514759538" />
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585515131083" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585201582929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
