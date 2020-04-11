@@ -12,7 +12,9 @@ The project has the following extensions from npm.
   3. React Router
   4. Redux Thunk
   
-  
+## Instructions
+Clone the project then `npm install` then `npm start`.
+
 ## Screenshots from the application
 Login
 ![Login](public/Login.png)
@@ -31,6 +33,4 @@ Leaderboard
 
 
 
-## Instructions
-Clone the project then `npm install` then `npm start`.
 
