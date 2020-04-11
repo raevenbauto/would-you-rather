@@ -9,7 +9,6 @@ import App   from "./component/App";
 
 const store = createStore(combineReducers, combineMiddleware);
 
-
 ReactDOM.render(
      <Provider store={store}>
          <App />
