@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b951d137-1825-4764-9fab-60ff48f7a339" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +45,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\raeven\Documents\GitHub\would-you-rather\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raeven\Documents\GitHub\would-you-rather\public" />
       <recent name="C:\Users\raeven\Documents\GitHub\would-you-rather\src\component" />
       <recent name="C:\Users\raeven\Documents\GitHub\would-you-rather\src\component\tabs" />
-      <recent name="C:\Users\raeven\Documents\GitHub\would-you-rather\public" />
       <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\src\component\layout" />
       <recent name="C:\Users\raevenb\WebstormProjects\would-you-rather\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raeven\Documents\GitHub\would-you-rather\public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -107,7 +106,7 @@
       <workItem from="1586407077676" duration="66000" />
       <workItem from="1586483635968" duration="27000" />
       <workItem from="1586500133832" duration="733000" />
-      <workItem from="1586577812500" duration="311000" />
+      <workItem from="1586577812500" duration="741000" />
     </task>
     <task id="LOCAL-00001" summary="Configured the login">
       <created>1584719204915</created>
@@ -172,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585521950374</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added images">
+      <created>1586578182028</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586578182028</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +192,8 @@
     <MESSAGE value="Added 404 page and allows to navigate directly to the url." />
     <MESSAGE value="Fixed error on Submit" />
     <MESSAGE value="Removed unnecessary imports." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary imports." />
+    <MESSAGE value="Added images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added images" />
   </component>
   <component name="WindowStateProjectService">
     <state x="441" y="206" key="#Deployment" timestamp="1585110275148">
@@ -201,18 +208,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585099340835" />
-    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1585521949370">
+    <state x="462" y="53" key="CommitChangelistDialog2" timestamp="1586578181006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585521949370" />
+    <state x="462" y="53" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586578181006" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584680549349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584680549349" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1586407142578">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1586578552588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586407142578" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586578552588" />
     <state x="817" y="415" key="Github.ShareDialog" timestamp="1584244904871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -241,10 +248,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="161" y="176" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584719144933" />
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1585521971270">
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2" timestamp="1586578190042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585521971270" />
+    <state x="552" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586578190042" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585201582929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
